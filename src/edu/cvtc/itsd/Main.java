@@ -42,7 +42,10 @@ public class Main {
         throws BadLocationException
     {
       if (fb.getDocument() != null) {
-        super.insertString(fb, offset, stringToAdd, attr);
+        if ((fb.getDocument().getLength() + stringToAdd.length()) <= MAX_LENGTH) {
+          super.insertString(fb, offset, stringToAdd, attr);
+        }
+        
       }
       else {
         Toolkit.getDefaultToolkit().beep();
@@ -54,6 +57,7 @@ public class Main {
         throws BadLocationException
     {
       if (fb.getDocument() != null) {
+        if ((fb.getDocument().getLength() - lengthToDelete + stringToAdd.length()) <= MAX_LENGTH)
         super.replace(fb, offset, lengthToDelete, stringToAdd, attr);
       }
       else {
