@@ -69,3 +69,12 @@ Use `./build.sh` to build CiCo and `./run.sh` to run it if using the command lin
 
 ## Expected results
 * Should display "Please show your card to staff to validate."
+
+# Module 5: Ticket 502
+
+## Test steps
+1. Build and run CiCo.
+2. Close CiCo
+
+## Expected results
+* Should be able to gitbash right away without manual closing of application
