@@ -78,3 +78,12 @@ Use `./build.sh` to build CiCo and `./run.sh` to run it if using the command lin
 
 ## Expected results
 * Should be able to gitbash right away without manual closing of application
+
+# Module 6: Ticket 601
+
+## Test steps
+1. Build and run CiCo.
+2. Enter 00000000 into the field
+
+## Expected results
+* CiCo should automatically submit after 8 digits are entered
